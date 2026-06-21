@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next { height: 100%; }
+
+/* Simple spinner */
+.spinner {
+	border: 3px solid rgba(0,0,0,0.1);
+	border-left-color: #4f46e5;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	to { transform: rotate(360deg); }
+}
